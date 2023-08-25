@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>95d78409c32c31100b48451ad0013121</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_mer_demo_step">
+    <x_snc_mer_demo_step action="INSERT_OR_UPDATE">
+        <demo_part display_value="Sample iPad Demo (Landscape)">13c604c5c32c31100b48451ad0013166</demo_part>
+        <order>3</order>
+        <screenshot/>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-08-07 07:56:14</sys_created_on>
+        <sys_id>95d78409c32c31100b48451ad0013121</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-25 01:42:05</sys_updated_on>
+        <type>iframe</type>
+        <url>/sp</url>
+    </x_snc_mer_demo_step>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-08-25 02:54:42</sys_created_on>
+        <sys_id>567fe322c37071100b48451ad001317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2023-08-07 00:56:14</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_metadata_link_567fe322c37071100b48451ad001317e</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-25 02:54:42</sys_updated_on>
+        <tablename>x_snc_mer_demo_step</tablename>
+    </sys_metadata_link>
+</record_update>

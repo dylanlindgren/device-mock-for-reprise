@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>get_device_details_from_zip</internal_name>
+        <label_cache>[{"name":"{{action.device_package}}","label":"action➛Device Package","type":"action","ref":"","reference_display":"Meta Device Package","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.device_package.sys_id}}","label":"action➛Device Package➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"x_snc_mer_device_package","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[269649b2-e33e-405f-824a-f6e30c30a76b].record}}","label":"step➛Look Up Record step➛Attachment Record","type":"step","ref":"sys_attachment","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ae5a5c8-3b18-4858-8f8f-787f996979fa].file_details}}","label":"step➛Zip step➛File Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>93a93775c3d7e51072397fef050131ee</master_snapshot>
+        <name>Get Device ZIP Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:03:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b483335c3d7e51072397fef0501315b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Device ZIP Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_0b483335c3d7e51072397fef0501315b</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-25 01:30:04</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=0b483335c3d7e51072397fef0501315b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0b483335c3d7e51072397fef0501315b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>0b483335c3d7e51072397fef0501315b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:38</sys_created_on>
+        <sys_id>03a93775c3d7e51072397fef050131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">7aa93775c3d7e51072397fef050131bc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>0b483335c3d7e51072397fef0501315b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:38</sys_created_on>
+        <sys_id>c3a93775c3d7e51072397fef050131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <value>{"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">3aa93775c3d7e51072397fef050131b8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0b483335c3d7e51072397fef0501315b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>device_zip_details</field>
+        <id>0b483335c3d7e51072397fef0501315b</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>26697375c3d7e51072397fef0501310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</table>
+        <value>{{step[5ae5a5c8-3b18-4858-8f8f-787f996979fa].file_details}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>0b483335c3d7e51072397fef0501315b</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:38</sys_created_on>
+        <sys_id>8fa93775c3d7e51072397fef050131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>0b483335c3d7e51072397fef0501315b</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:38</sys_created_on>
+        <sys_id>cba93775c3d7e51072397fef050131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=0b483335c3d7e51072397fef0501315b^sys_idNOT IN9e693375c3d7e51072397fef050131de,d6693375c3d7e51072397fef050131d5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</action>
+        <cid>5ae5a5c8-3b18-4858-8f8f-787f996979fa</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Zip step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="">5d48cc00eba23010a38a41518f522842</step_type>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>9e693375c3d7e51072397fef050131de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9e693375c3d7e51072397fef050131de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9e693375c3d7e51072397fef050131de</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>2e693375c3d7e51072397fef050131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <value>get_zip_file_details</value>
+        <variable display_value="">f1390840eba23010a38a41518f52286f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de^id=9e693375c3d7e51072397fef050131de"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9e693375c3d7e51072397fef050131de"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9e693375c3d7e51072397fef050131de"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9e693375c3d7e51072397fef050131de^sys_idNOT IN1e693375c3d7e51072397fef050131e7,96693375c3d7e51072397fef050131ec"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=File Object,child_name=file_details_child,child_type=object,child_type_label=Object,child_uiUniqueId=cbddc6ac-d910-4a3d-b7bb-553ffe6c6288,co_type_name=FDde6933755dd7e510b3c8f25cdadaf2e4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b38b8868-2160-4715-a0b1-61ac5e7ef489</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_details</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>File Details</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Zip step">9e693375c3d7e51072397fef050131de</model>
+        <model_id>9e693375c3d7e51072397fef050131de</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>1e693375c3d7e51072397fef050131e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=d3f16d33-fe86-4bc6-837e-27bf99c9fc58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>files_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Number of files</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Zip step">9e693375c3d7e51072397fef050131de</model>
+        <model_id>9e693375c3d7e51072397fef050131de</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>96693375c3d7e51072397fef050131ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9e693375c3d7e51072397fef050131de"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de^sys_idNOT INae693375c3d7e51072397fef050131ee,d6693375c3d7e51072397fef050131eb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>files_count</element>
+        <help/>
+        <hint/>
+        <label>Number of files</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>ae693375c3d7e51072397fef050131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number of files</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de_files_count_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_details</element>
+        <help/>
+        <hint/>
+        <label>File Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>d6693375c3d7e51072397fef050131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>File Details</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_9e693375c3d7e51072397fef050131de_file_details_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</action>
+        <cid>269649b2-e33e-405f-824a-f6e30c30a76b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Record step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:29</sys_created_on>
+        <sys_id>d6693375c3d7e51072397fef050131d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6693375c3d7e51072397fef050131d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6693375c3d7e51072397fef050131d5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>16693375c3d7e51072397fef050131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <value>sys_attachment</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d6693375c3d7e51072397fef050131d5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>d6693375c3d7e51072397fef050131d5</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>92693375c3d7e51072397fef050131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>table_name=ZZ_YYx_snc_mer_device_package^table_sys_id={{action.device_package.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>d6693375c3d7e51072397fef050131d5</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>de693375c3d7e51072397fef050131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=d6693375c3d7e51072397fef050131d5"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d6693375c3d7e51072397fef050131d5"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d6693375c3d7e51072397fef050131d5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d6693375c3d7e51072397fef050131d5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d6693375c3d7e51072397fef050131d5"/>
+    <sys_hub_action_input action="delete_multiple" query="model=0b483335c3d7e51072397fef0501315b^sys_idNOT IN5a693375c3d7e51072397fef050131ce"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5b94ac46-83fe-4ab6-8d02-14a67cc67c45</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_mer_device_package</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>device_package</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Device Package</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</model>
+        <model_id>0b483335c3d7e51072397fef0501315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_0b483335c3d7e51072397fef0501315b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_mer_device_package">x_snc_mer_device_package</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:29</sys_created_on>
+        <sys_id>5a693375c3d7e51072397fef050131ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5a693375c3d7e51072397fef050131ce"/>
+    <sys_hub_action_output action="delete_multiple" query="model=0b483335c3d7e51072397fef0501315b^sys_idNOT IN3aa93775c3d7e51072397fef050131b8,7aa93775c3d7e51072397fef050131bc,e2693375c3d7e51072397fef050131f8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=69d884f9-0313-4c53-b4ba-d22a9d54e194</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</model>
+        <model_id>0b483335c3d7e51072397fef0501315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:37</sys_created_on>
+        <sys_id>3aa93775c3d7e51072397fef050131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3aa93775c3d7e51072397fef050131b8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3aa93775c3d7e51072397fef050131b8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=493b25c5-f360-4767-b667-7819fc7a181e,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</model>
+        <model_id>0b483335c3d7e51072397fef0501315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:37</sys_created_on>
+        <sys_id>7aa93775c3d7e51072397fef050131bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7aa93775c3d7e51072397fef050131bc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7aa93775c3d7e51072397fef050131bc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=File Object,child_name=file_details_child,child_type=object,child_type_label=Object,child_uiUniqueId=50b7bba6-e520-4a77-a193-bf68f245bf4f,co_type_name=FDaa69337516d7e510c17cffc6c05f34f5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=5ae5a5c8-3b18-4858-8f8f-787f996979fa,sourceType=step,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b00e0950-3dc5-4567-8521-454a2db0b67c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>device_zip_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Device ZIP Details</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</model>
+        <model_id>0b483335c3d7e51072397fef0501315b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>e2693375c3d7e51072397fef050131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e2693375c3d7e51072397fef050131f8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e2693375c3d7e51072397fef050131f8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0b483335c3d7e51072397fef0501315b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0b483335c3d7e51072397fef0501315b^sys_idNOT IN62697375c3d7e51072397fef0501310d"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</action_type_id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>62697375c3d7e51072397fef0501310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=62697375c3d7e51072397fef0501310d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0b483335c3d7e51072397fef0501315b^sys_idNOT IN56693375c3d7e51072397fef050131d3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>device_package</element>
+        <help/>
+        <hint/>
+        <label>Device Package</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_0b483335c3d7e51072397fef0501315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:29</sys_created_on>
+        <sys_id>56693375c3d7e51072397fef050131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device Package</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0b483335c3d7e51072397fef0501315b_device_package_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0b483335c3d7e51072397fef0501315b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b^sys_idNOT IN47a93775c3d7e51072397fef050131c1,baa93775c3d7e51072397fef050131bb,e6693375c3d7e51072397fef050131fc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:38</sys_created_on>
+        <sys_id>47a93775c3d7e51072397fef050131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:37</sys_created_on>
+        <sys_id>baa93775c3d7e51072397fef050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b___action_status___en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>device_zip_details</element>
+        <help/>
+        <hint/>
+        <label>Device ZIP Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:08:30</sys_created_on>
+        <sys_id>e6693375c3d7e51072397fef050131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device ZIP Details</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b_device_zip_details_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0b483335c3d7e51072397fef0501315b"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=0b483335c3d7e51072397fef0501315b^sys_idNOT INc8b97775c3d7e51072397fef05013195"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c8b97775c3d7e51072397fef05013195","name":"plan","plan_signature":null}}</plan>
+        <snapshot>2ba97775c3d7e51072397fef05013128</snapshot>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8b97775c3d7e51072397fef05013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:42</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_device_zip_details</internal_name>
+        <label_cache>[{"name":"{{action.device_package}}","label":"action➛Device Package","type":"action","ref":"","reference_display":"Meta Device Package","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.device_package.sys_id}}","label":"action➛Device Package➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"x_snc_mer_device_package","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[269649b2-e33e-405f-824a-f6e30c30a76b].record}}","label":"step➛Look Up Record step➛Attachment Record","type":"step","ref":"sys_attachment","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ae5a5c8-3b18-4858-8f8f-787f996979fa].file_details}}","label":"step➛Zip step➛File Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Get Device ZIP Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Device ZIP Details">0b483335c3d7e51072397fef0501315b</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93a93775c3d7e51072397fef050131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=93a93775c3d7e51072397fef050131ee"/>
+    <sys_variable_value action="delete_multiple" query="document_key=93a93775c3d7e51072397fef050131ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>93a93775c3d7e51072397fef050131ee</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>6ba97775c3d7e51072397fef05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <value>{"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">2ba97775c3d7e51072397fef05013119</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>93a93775c3d7e51072397fef050131ee</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>a7a97775c3d7e51072397fef05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">2ba97775c3d7e51072397fef0501311d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=93a93775c3d7e51072397fef050131ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>device_zip_details</field>
+        <id>93a93775c3d7e51072397fef050131ee</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>27a97775c3d7e51072397fef05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</table>
+        <value>{{step[5ae5a5c8-3b18-4858-8f8f-787f996979fa].file_details}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>93a93775c3d7e51072397fef050131ee</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>63a97775c3d7e51072397fef05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>93a93775c3d7e51072397fef050131ee</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>afa97775c3d7e51072397fef05013124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=93a93775c3d7e51072397fef050131ee^sys_idNOT IN1fa93775c3d7e51072397fef050131fe,93a93775c3d7e51072397fef050131f8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</action>
+        <cid>5ae5a5c8-3b18-4858-8f8f-787f996979fa</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Zip step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="">5d48cc00eba23010a38a41518f522842</step_type>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>1fa93775c3d7e51072397fef050131fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1fa93775c3d7e51072397fef050131fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fa93775c3d7e51072397fef050131fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>97a97775c3d7e51072397fef0501310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <value>get_zip_file_details</value>
+        <variable display_value="">f1390840eba23010a38a41518f52286f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe^id=1fa93775c3d7e51072397fef050131fe"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=1fa93775c3d7e51072397fef050131fe"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1fa93775c3d7e51072397fef050131fe"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1fa93775c3d7e51072397fef050131fe^sys_idNOT IN1fa97775c3d7e51072397fef05013104,d3a97775c3d7e51072397fef05013109"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=File Object,child_name=file_details_child,child_type=object,child_type_label=Object,child_uiUniqueId=cbddc6ac-d910-4a3d-b7bb-553ffe6c6288,co_type_name=FD57a97775e8d7e510b0549d81f0f2bc02,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b38b8868-2160-4715-a0b1-61ac5e7ef489</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_details</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>File Details</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Zip step">1fa93775c3d7e51072397fef050131fe</model>
+        <model_id>1fa93775c3d7e51072397fef050131fe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>1fa97775c3d7e51072397fef05013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=d3f16d33-fe86-4bc6-837e-27bf99c9fc58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>files_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Number of files</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Zip step">1fa93775c3d7e51072397fef050131fe</model>
+        <model_id>1fa93775c3d7e51072397fef050131fe</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>d3a97775c3d7e51072397fef05013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1fa93775c3d7e51072397fef050131fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe^sys_idNOT IN17a97775c3d7e51072397fef05013108,1fa97775c3d7e51072397fef0501310b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_details</element>
+        <help/>
+        <hint/>
+        <label>File Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>17a97775c3d7e51072397fef05013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>File Details</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe_file_details_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>files_count</element>
+        <help/>
+        <hint/>
+        <label>Number of files</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>1fa97775c3d7e51072397fef0501310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number of files</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_1fa93775c3d7e51072397fef050131fe_files_count_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</action>
+        <cid>269649b2-e33e-405f-824a-f6e30c30a76b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Look Up Record step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Look Up Record">dc9c26043b23220057a4a2e334efc447</step_type>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>93a93775c3d7e51072397fef050131f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=93a93775c3d7e51072397fef050131f8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>93a93775c3d7e51072397fef050131f8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>97a93775c3d7e51072397fef050131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <value>sys_attachment</value>
+        <variable display_value="Table">f9cc66043b23220057a4a2e334efc42f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=93a93775c3d7e51072397fef050131f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>93a93775c3d7e51072397fef050131f8</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>17a93775c3d7e51072397fef050131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value>table_name=ZZ_YYx_snc_mer_device_package^table_sys_id={{action.device_package.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lookup_table_name</field>
+        <id>93a93775c3d7e51072397fef050131f8</id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>53a93775c3d7e51072397fef050131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_dc9c26043b23220057a4a2e334efc447</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=93a93775c3d7e51072397fef050131f8"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=93a93775c3d7e51072397fef050131f8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=93a93775c3d7e51072397fef050131f8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93a93775c3d7e51072397fef050131f8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_93a93775c3d7e51072397fef050131f8"/>
+    <sys_hub_action_input action="delete_multiple" query="model=93a93775c3d7e51072397fef050131ee^sys_idNOT INd7a93775c3d7e51072397fef050131f1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5b94ac46-83fe-4ab6-8d02-14a67cc67c45</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_mer_device_package</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>device_package</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Device Package</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</model>
+        <model_id>93a93775c3d7e51072397fef050131ee</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_93a93775c3d7e51072397fef050131ee</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_mer_device_package">x_snc_mer_device_package</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>d7a93775c3d7e51072397fef050131f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d7a93775c3d7e51072397fef050131f1"/>
+    <sys_hub_action_output action="delete_multiple" query="model=93a93775c3d7e51072397fef050131ee^sys_idNOT IN2ba97775c3d7e51072397fef05013119,2ba97775c3d7e51072397fef0501311d,9ba97775c3d7e51072397fef05013114"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=69d884f9-0313-4c53-b4ba-d22a9d54e194</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</model>
+        <model_id>93a93775c3d7e51072397fef050131ee</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>2ba97775c3d7e51072397fef05013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2ba97775c3d7e51072397fef05013119"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ba97775c3d7e51072397fef05013119"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=493b25c5-f360-4767-b667-7819fc7a181e,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</model>
+        <model_id>93a93775c3d7e51072397fef050131ee</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>2ba97775c3d7e51072397fef0501311d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2ba97775c3d7e51072397fef0501311d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ba97775c3d7e51072397fef0501311d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=File Object,child_name=file_details_child,child_type=object,child_type_label=Object,child_uiUniqueId=50b7bba6-e520-4a77-a193-bf68f245bf4f,co_type_name=FD53a977754ed7e5105adb360b0e2bf112,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=5ae5a5c8-3b18-4858-8f8f-787f996979fa,sourceType=step,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b00e0950-3dc5-4567-8521-454a2db0b67c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>device_zip_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Device ZIP Details</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</model>
+        <model_id>93a93775c3d7e51072397fef050131ee</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>9ba97775c3d7e51072397fef05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ba97775c3d7e51072397fef05013114"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ba97775c3d7e51072397fef05013114"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=93a93775c3d7e51072397fef050131ee"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=93a93775c3d7e51072397fef050131ee^sys_idNOT IN67a97775c3d7e51072397fef05013128"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Device ZIP Details">93a93775c3d7e51072397fef050131ee</action_type_id>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>67a97775c3d7e51072397fef05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=67a97775c3d7e51072397fef05013128"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_93a93775c3d7e51072397fef050131ee^sys_idNOT INdfa93775c3d7e51072397fef050131f5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>device_package</element>
+        <help/>
+        <hint/>
+        <label>Device Package</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_93a93775c3d7e51072397fef050131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:39</sys_created_on>
+        <sys_id>dfa93775c3d7e51072397fef050131f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device Package</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_93a93775c3d7e51072397fef050131ee_device_package_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_93a93775c3d7e51072397fef050131ee"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee^sys_idNOT IN5ba97775c3d7e51072397fef05013118,6ba97775c3d7e51072397fef0501311c,e3a97775c3d7e51072397fef05013122"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>device_zip_details</element>
+        <help/>
+        <hint/>
+        <label>Device ZIP Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>5ba97775c3d7e51072397fef05013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Device ZIP Details</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee_device_zip_details_en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>6ba97775c3d7e51072397fef0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee___action_status___en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:09:40</sys_created_on>
+        <sys_id>e3a97775c3d7e51072397fef05013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:09:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_93a93775c3d7e51072397fef050131ee"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>0b483335c3d7e51072397fef0501315b</sys_id>
+        <latest_snapshot>93a93775c3d7e51072397fef050131ee</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch3-04-20-2023_05-04-2023_2316.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

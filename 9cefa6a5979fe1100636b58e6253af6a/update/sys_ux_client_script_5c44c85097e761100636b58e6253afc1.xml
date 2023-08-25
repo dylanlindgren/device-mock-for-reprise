@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">a8f287e997dfe1100636b58e6253afb8</macroponent>
+        <name>Handle elements updated</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.data.update_demo_areas.execute({
+        "demoStepId": api.state.selectedStep,
+        "areas": JSON.stringify(event.payload.elements)
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-16 06:42:12</sys_created_on>
+        <sys_id>5c44c85097e761100636b58e6253afc1</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Handle elements updated</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_client_script_5c44c85097e761100636b58e6253afc1</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-04 02:55:29</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

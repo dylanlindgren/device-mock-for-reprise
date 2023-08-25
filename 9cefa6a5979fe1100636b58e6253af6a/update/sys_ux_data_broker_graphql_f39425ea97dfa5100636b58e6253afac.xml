@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_mer.Get Device &amp; Step Details</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Device &amp; Step Details</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+  "name": "stepId",&#13;
+  "label": "Step ID",&#13;
+  "description": "The Step ID",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "reference",&#13;
+  "typeMetadata": {&#13;
+        "reference": "x_snc_mer_demo_step"&#13;
+    },&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+},{&#13;
+  "name": "deviceId",&#13;
+  "label": "Device ID",&#13;
+  "description": "The Device ID",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "reference",&#13;
+  "typeMetadata": {&#13;
+        "reference": "x_snc_mer_device"&#13;
+    },&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+}]</props>
+        <query>query ($stepId: ID!, $deviceId: ID!) {&#13;
+    xSncMer {&#13;
+        mobileMock {&#13;
+            getDeviceStepDetails (stepId: $stepId, deviceId: $deviceId) {&#13;
+                step {&#13;
+                    sysId,&#13;
+                    name,&#13;
+                    type,&#13;
+                    part,&#13;
+                    url,&#13;
+                    areas {&#13;
+                        id,&#13;
+                        top,&#13;
+                        left,&#13;
+                        height,&#13;
+                        width&#13;
+                    }&#13;
+                }&#13;
+                device {&#13;
+                    sysId,&#13;
+                    name&#13;
+                    width&#13;
+                    height&#13;
+                    package,&#13;
+                    offsetX&#13;
+                    offsetY&#13;
+                    cropRadius&#13;
+                    deviceOffsetTop&#13;
+                    url&#13;
+                }&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+}</query>
+        <required_translations>[ {
+  "message" : "Device ID",
+  "comment" : ""
+}, {
+  "message" : "Step ID",
+  "comment" : ""
+}, {
+  "message" : "The Device ID",
+  "comment" : ""
+}, {
+  "message" : "The Step ID",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 03:16:45</sys_created_on>
+        <sys_id>f39425ea97dfa5100636b58e6253afac</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get Device &amp; Step Details</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_f39425ea97dfa5100636b58e6253afac</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-07 06:11:27</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=f39425ea97dfa5100636b58e6253afac"/>
+</record_update>

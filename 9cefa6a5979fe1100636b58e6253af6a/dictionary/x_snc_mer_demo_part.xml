@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cd1d766597dfe1100636b58e6253afa1" label="Demo Part" max_length="40" name="x_snc_mer_demo_part" type="collection">
+        <element label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>8fc207e997dfe1100636b58e6253af30</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="Mobile Mock for Reprise">42791a2a9793e5100636b58e6253af03</parent_app>
+        <path>device-mock</path>
+        <root_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-08 07:31:25</sys_created_on>
+        <sys_id>43c207e997dfe1100636b58e6253af34</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Device Mock for Reprise</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_page_registry_43c207e997dfe1100636b58e6253af34</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-03 02:27:52</sys_updated_on>
+        <title>Device Mock for Reprise</title>
+    </sys_ux_page_registry>
+</record_update>

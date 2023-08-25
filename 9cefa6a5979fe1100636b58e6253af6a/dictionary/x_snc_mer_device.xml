@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="81a1f629979fe1100636b58e6253afcb" label="Meta Device" max_length="40" name="x_snc_mer_device" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Default" max_length="40" name="default" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Device package" max_length="32" name="device_package" reference="x_snc_mer_device_package" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="File" max_length="40" name="file" type="file_attachment"/>
+        <element label="Name" max_length="256" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="device" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Device" sequence="1" value="device"/>
+                <element inactive_on_update="false" label="Device with Shadow" sequence="2" value="device_with_shadow"/>
+                <element inactive_on_update="false" label="Device with Pencil" sequence="3" value="device_with_pencil"/>
+                <element inactive_on_update="false" label="Device with Shadow with Pencil" sequence="4" value="device_with_shadow_with_pencil"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="device_package"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_mer.GQL_Helper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GQL_Helper</name>
+        <script><![CDATA[var GQL_Helper = Class.create();
+GQL_Helper.prototype = {
+    initialize: function() {},
+	
+	deleteDemoArea: function (demoAreaId) {
+		var demoAreaGr = new GlideRecord('x_snc_mer_demo_area');
+		if (demoAreaGr.get('id', demoAreaId)) {
+			return demoAreaGr.deleteRecord();
+		}
+		
+		return false;
+	},
+
+    getDefaultDeviceId: function () {
+        var deviceGr = new GlideRecord('x_snc_mer_device');
+        deviceGr.get('default', 'true');
+        return deviceGr.getUniqueValue();
+    },
+
+    getDeviceStepDetails: function (deviceId, stepId) {
+
+        var deviceGr = new GlideRecord('x_snc_mer_device');
+        deviceGr.get(deviceId);
+        var devicePackageGr = deviceGr.device_package.getRefRecord();
+
+        var demoStepGr = new GlideRecord('x_snc_mer_demo_step');
+        demoStepGr.get(stepId);
+
+        var demoAreaGr = new GlideRecord('x_snc_mer_demo_area');
+        demoAreaGr.addQuery('demo_step', demoStepGr.getUniqueValue());
+        demoAreaGr.query();
+
+        var demoAreas = [];
+
+        while (demoAreaGr.next()) {
+            demoAreas.push({
+                id: demoAreaGr.getValue('id'),
+                top: parseInt(demoAreaGr.getValue('top')),
+                left: parseInt(demoAreaGr.getValue('left')),
+                width: parseInt(demoAreaGr.getValue('width')),
+                height: parseInt(demoAreaGr.getValue('height'))
+            });
+        }
+
+        return {
+            step: !demoStepGr.isValidRecord() ? null : {
+                sysId: demoStepGr.getUniqueValue(),
+                part: demoStepGr.getValue('demo_part'),
+                name: demoStepGr.getDisplayValue(),
+                type: demoStepGr.getValue('type'),
+                url: demoStepGr.getValue('type') === 'screenshot' ? '/' + demoStepGr.getValue('screenshot') + '.iix' : demoStepGr.getValue('url'),
+                areas: demoAreas
+            },
+            device: !deviceGr.isValidRecord() ? null : {
+                sysId: deviceGr.getUniqueValue(),
+                name: deviceGr.getDisplayValue(),
+                package: devicePackageGr.getUniqueValue(),
+                width: devicePackageGr.getValue('width'),
+                height: devicePackageGr.getValue('height'),
+                offsetX: devicePackageGr.getValue('offset_x'),
+                offsetY: devicePackageGr.getValue('offset_y'),
+                cropRadius: devicePackageGr.getValue('crop_radius'),
+				deviceOffsetTop: devicePackageGr.getValue('device_offset_top'),
+                url: '/' + deviceGr.getValue('file') + '.iix'
+            }
+        };
+
+    },
+
+    getDeviceList: function () {
+        var deviceGr = new GlideRecord('x_snc_mer_device');
+		deviceGr.orderBy('type');
+        deviceGr.query();
+
+        var devicePackages = [];
+
+        while (deviceGr.next()) {
+
+            var devicePackageIndex = devicePackages.findIndex(cv => cv.sysId === deviceGr.getValue('device_package'));
+            var devicePackage = deviceGr.device_package.getRefRecord();
+
+            if (devicePackageIndex === -1) {
+                devicePackages.push({
+                    sysId: deviceGr.getValue('device_package'),
+                    name: deviceGr.getDisplayValue('device_package'),
+                    devices: []
+                });
+                devicePackageIndex = devicePackages.length - 1;
+            }
+
+            devicePackages[devicePackageIndex].devices.push({
+                sysId: deviceGr.getUniqueValue(),
+                name: deviceGr.getDisplayValue(),
+                deviceType: deviceGr.getDisplayValue('type')
+            });
+
+        }
+
+        return devicePackages;
+    },
+
+    getStepList: function () {
+        var demoStepGr = new GlideRecord('x_snc_mer_demo_step');
+        demoStepGr.orderBy('order');
+        demoStepGr.query();
+
+        var demoParts = [];
+
+        while (demoStepGr.next()) {
+
+            var demoPartIndex = demoParts.findIndex(cv => cv.sysId === demoStepGr.getValue('demo_part'));
+
+            if (demoPartIndex === -1) {
+                demoParts.push({
+                    sysId: demoStepGr.getValue('demo_part'),
+                    name: demoStepGr.getDisplayValue('demo_part'),
+                    steps: []
+                });
+                demoPartIndex = demoParts.length - 1;
+            }
+
+            var demoAreaGr = new GlideRecord('x_snc_mer_demo_area');
+            demoAreaGr.addQuery('demo_step', demoStepGr.getUniqueValue());
+
+            var demoAreas = [];
+
+            while (demoAreaGr.next()) {
+                demoAreas.push({
+                    id: demoAreaGr.getValue('id'),
+                    top: parseInt(demoAreaGr.getValue('top')),
+                    left: parseInt(demoAreaGr.getValue('left')),
+                    width: parseInt(demoAreaGr.getValue('width')),
+                    height: parseInt(demoAreaGr.getValue('height'))
+                });
+            }
+
+            demoParts[demoPartIndex].steps.push({
+                sysId: demoStepGr.getUniqueValue(),
+                name: demoStepGr.getDisplayValue('screenshot'),
+                areas: demoAreas,
+                number: demoStepGr.getValue('order')
+            });
+        }
+
+        return demoParts;
+    },
+
+    updateDemoAreas: function (demoStepId, areas) {
+
+        areas.forEach(function (area) {
+
+            var areaGr = new GlideRecord('x_snc_mer_demo_area');
+            
+            if (!areaGr.get('id', area.id)) {
+                areaGr = new GlideRecord('x_snc_mer_demo_area');
+                areaGr.initialize();
+                areaGr.setValue('demo_step', demoStepId);
+            }
+
+            areaGr.setValue('id', area.id);
+            areaGr.setValue('top', area.top);
+            areaGr.setValue('left', area.left);
+            areaGr.setValue('width', area.width);
+            areaGr.setValue('height', area.height);
+            areaGr.update();
+        });
+
+        return true;
+
+    },
+
+    type: 'GQL_Helper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 02:53:30</sys_created_on>
+        <sys_id>8fef11e697dfa5100636b58e6253afce</sys_id>
+        <sys_mod_count>64</sys_mod_count>
+        <sys_name>GQL_Helper</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_script_include_8fef11e697dfa5100636b58e6253afce</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-07 12:54:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

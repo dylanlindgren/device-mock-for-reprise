@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Positioning &amp; Size" section_id="0769c61ec35b291072397fef050131b8" sys_domain="global" table="x_snc_mer_device_package" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>c08b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>offset_x</element>
+            <position>1</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>448b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>offset_y</element>
+            <position>2</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>c48b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>crop_radius</element>
+            <position>3</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>488b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>c88b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>width</element>
+            <position>5</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>4c8b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>height</element>
+            <position>6</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>cc8b44ccc3e831100b48451ad001313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>408b44ccc3e831100b48451ad001313f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_mer_instructions.xml</element>
+            <position>8</position>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-08-04 05:38:09</sys_created_on>
+            <sys_id>c08b44ccc3e831100b48451ad001313f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Device Mock for Reprise Instructions">74b9404cc3e831100b48451ad0013187</sys_ui_formatter>
+            <sys_ui_section caption="Positioning &amp; Size" display_value="Positioning &amp; Size" name="x_snc_mer_device_package" sys_domain="global" view="Default view">0769c61ec35b291072397fef050131b8</sys_ui_section>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-08-04 05:38:09</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Positioning &amp; Size</caption>
+            <header>false</header>
+            <name>x_snc_mer_device_package</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2023-06-10 11:16:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0769c61ec35b291072397fef050131b8</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_snc_mer_device_package</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+            <sys_update_name>sys_ui_section_0769c61ec35b291072397fef050131b8</sys_update_name>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2023-06-21 13:29:25</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

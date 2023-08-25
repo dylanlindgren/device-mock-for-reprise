@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app">
+    <sys_ux_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <multiple_experiences>false</multiple_experiences>
+        <name>Mobile Mock for Reprise</name>
+        <primary_experience display_value="Device Mock for Reprise">43c207e997dfe1100636b58e6253af34</primary_experience>
+        <shell_root display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</shell_root>
+        <shell_root_config/>
+        <sys_class_name>sys_ux_app</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 07:05:27</sys_created_on>
+        <sys_id>42791a2a9793e5100636b58e6253af03</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Mobile Mock for Reprise</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_app_42791a2a9793e5100636b58e6253af03</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-07-26 05:54:03</sys_updated_on>
+        <theme display_value="Polaris">31bf91ae07203010e03948f78ad30095</theme>
+        <user_preference_namespace/>
+    </sys_ux_app>
+</record_update>

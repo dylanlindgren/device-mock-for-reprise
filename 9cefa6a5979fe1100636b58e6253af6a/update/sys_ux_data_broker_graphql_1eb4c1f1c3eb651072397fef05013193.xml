@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_mer.Delete Demo Area</api_name>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Delete Demo Area</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+    "name": "demoAreaId",&#13;
+    "label": "Demo Area ID",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "string",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "The ID of the demo area"&#13;
+  }]</props>
+        <query>mutation ($demoAreaId: ID!) {&#13;
+    xSncMer {&#13;
+        mobileMock {&#13;
+            deleteDemoArea (demoAreaId: $demoAreaId)&#13;
+        }&#13;
+    }&#13;
+}</query>
+        <required_translations>[ {
+  "message" : "Demo Area ID",
+  "comment" : ""
+}, {
+  "message" : "The ID of the demo area",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-21 03:15:44</sys_created_on>
+        <sys_id>1eb4c1f1c3eb651072397fef05013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete Demo Area</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_1eb4c1f1c3eb651072397fef05013193</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-21 03:15:44</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=1eb4c1f1c3eb651072397fef05013193"/>
+</record_update>

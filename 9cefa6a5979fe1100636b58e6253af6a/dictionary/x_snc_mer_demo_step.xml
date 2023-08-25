@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0afd36a597dfe1100636b58e6253af39" label="Demo Step" max_length="40" name="x_snc_mer_demo_step" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Demo part" max_length="32" name="demo_part" reference="x_snc_mer_demo_part" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="1" label="Order" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Screenshot" max_length="40" name="screenshot" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="screenshot" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Screenshot" sequence="1" value="screenshot"/>
+                <element inactive_on_update="false" label="iFrame (URL)" sequence="2" value="iframe"/>
+            </choice>
+        </element>
+        <element label="URL" max_length="1024" name="url" type="url"/>
+        <index name="index">
+            <element name="demo_part"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_schema">
+    <sys_graphql_schema action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application_namespace>xSncMer</application_namespace>
+        <enforce_acl/>
+        <name>MobileMock</name>
+        <namespace>mobileMock</namespace>
+        <paths>Area:height,Area:id,Area:left,Area:top,Area:width,DemoPart:name,DemoPart:steps,DemoPart:sysId,Device:deviceType,Device:name,Device:package,Device:sysId,DeviceDetails:cropRadius,DeviceDetails:deviceOffsetTop,DeviceDetails:height,DeviceDetails:name,DeviceDetails:offsetX,DeviceDetails:offsetY,DeviceDetails:package,DeviceDetails:sysId,DeviceDetails:url,DeviceDetails:width,DevicePackage:devices,DevicePackage:name,DevicePackage:sysId,DeviceStepDetails:device,DeviceStepDetails:step,Mutation:deleteDemoArea,Mutation:updateDemoAreas,Query:getDeviceList,Query:getDeviceStepDetails,Query:getStepList,Step:areas,Step:name,Step:number,Step:part,Step:sysId,Step:type,Step:url,StepDetails:areas,StepDetails:name,StepDetails:part,StepDetails:sysId,StepDetails:type,StepDetails:url</paths>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <schema>schema {&#13;
+	query: Query&#13;
+	mutation: Mutation&#13;
+}&#13;
+&#13;
+type Query {&#13;
+	getDeviceStepDetails(deviceId: ID!, stepId: ID!): DeviceStepDetails,&#13;
+	getDeviceList: [DevicePackage],&#13;
+	getStepList: [DemoPart]&#13;
+}&#13;
+&#13;
+type Mutation {&#13;
+	updateDemoAreas(demoStepId: ID!, areas: String): Boolean&#13;
+	deleteDemoArea(demoAreaId: ID!): Boolean&#13;
+}&#13;
+&#13;
+type DemoPart {&#13;
+	sysId: ID,&#13;
+	name: String,&#13;
+	steps: [Step]&#13;
+}&#13;
+&#13;
+type Step {&#13;
+	sysId: ID,&#13;
+	name: String,&#13;
+	type: String,&#13;
+	part: ID,&#13;
+	number: Int,&#13;
+	url: String,&#13;
+	areas: [Area]&#13;
+}&#13;
+&#13;
+type DevicePackage {&#13;
+	sysId: ID,&#13;
+	name: String,&#13;
+	devices: [Device]&#13;
+}&#13;
+&#13;
+type Device {&#13;
+	sysId: ID&#13;
+	package: ID&#13;
+	name: String&#13;
+	deviceType: String&#13;
+}&#13;
+&#13;
+type DeviceStepDetails {&#13;
+	device: DeviceDetails,&#13;
+	step: StepDetails&#13;
+}&#13;
+&#13;
+type DeviceDetails {&#13;
+	sysId: ID,&#13;
+	name: String,&#13;
+	width: Int,&#13;
+	height: Int,&#13;
+	offsetX: Int,&#13;
+	package: ID,&#13;
+	offsetY: Int,&#13;
+	cropRadius: Int,&#13;
+	deviceOffsetTop: Int,&#13;
+	url: String,&#13;
+}&#13;
+&#13;
+type StepDetails {&#13;
+	sysId: ID,&#13;
+	name: String,&#13;
+	type: String,&#13;
+	part: ID,&#13;
+	url: String,&#13;
+	areas: [Area]&#13;
+}&#13;
+&#13;
+input InputArea {&#13;
+	id: ID,&#13;
+	top: Int,&#13;
+	left: Int,&#13;
+	width: Int,&#13;
+	height: Int&#13;
+}&#13;
+&#13;
+type Area {&#13;
+	id: ID,&#13;
+	top: Int,&#13;
+	left: Int,&#13;
+	width: Int,&#13;
+	height: Int&#13;
+}</schema>
+        <sys_class_name>sys_graphql_schema</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 02:45:07</sys_created_on>
+        <sys_id>286d1d2697dfa5100636b58e6253af9c</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>MobileMock</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_graphql_schema_286d1d2697dfa5100636b58e6253af9c</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-07 06:12:23</sys_updated_on>
+        <type_names/>
+    </sys_graphql_schema>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver_mapping">
+    <sys_graphql_resolver_mapping action="INSERT_OR_UPDATE">
+        <path>Mutation:updateDemoAreas</path>
+        <resolver display_value="updateDemoAreas">aea8085497e761100636b58e6253afdb</resolver>
+        <schema display_value="MobileMock">286d1d2697dfa5100636b58e6253af9c</schema>
+        <sys_class_name>sys_graphql_resolver_mapping</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-16 07:01:54</sys_created_on>
+        <sys_id>c7b8885497e761100636b58e6253af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_graphql_resolver_mapping_c7b8885497e761100636b58e6253af0a</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-16 07:01:54</sys_updated_on>
+    </sys_graphql_resolver_mapping>
+</record_update>

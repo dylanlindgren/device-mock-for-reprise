@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format/>
+        <height/>
+        <image>1a6b926a9793e5100636b58e6253af6a</image>
+        <name>x_snc_mer.servicenow_logo.svg</name>
+        <size_bytes>3223</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 07:12:36</sys_created_on>
+        <sys_id>a13b92aa9793e5100636b58e6253af32</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_mer.servicenow_logo.svg</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>db_image_a13b92aa9793e5100636b58e6253af32</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-11 07:13:16</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>c3cae62bad257c5262e7cf0ed7014a76344f35ecc92498e5f047e0eecb9d85cd</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>3223</size_bytes>
+        <size_compressed>1497</size_compressed>
+        <state>available</state>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 07:13:16</sys_created_on>
+        <sys_id>1a6b926a9793e5100636b58e6253af6a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-11 07:13:17</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>a13b92aa9793e5100636b58e6253af32</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="1a6b926a9793e5100636b58e6253af6a">1a6b926a9793e5100636b58e6253af6a</sys_attachment>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 07:13:16</sys_created_on>
+        <sys_id>5a6b926a9793e5100636b58e6253af6a</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>fVZdb9s2FH12fgWntwEkLZKiPtK4xRoMXYEUGFAgr0Miq7ZRzTZsxUk67L/vnEvZXrY2gK1LXpL3gzz3kFfvnv7s1aHb7Veb9SxzNs9Ut24389V6Mcsehi+mzt69vbj6yRj1oVt3u7ths7tUv8w395362PcP+0FUypc2t0Grz7cf1K9P281uUL/3Dwvzca2sKG+Tj0uFibl6/7Dq5yr/WSljYH5/WPw7CJep1XyW3dw9d7s/0EGM6/0sWw7D9nI6fXx8tI/BbnaLqc/zfIrF45TLp361/vq9ia5pmqmMYuosy7dPmXpO8mKiDqvu8f2GepUrH70tVeVtzNR+eO67Wdat7+77ztzftV8Xu83Den657h7Vy8lvJIbL/fauxYrtrtt3u0OXMTkaUcPzFvqhexqm7X4P/cTuh/yvL6u+N7uHvrvsDt16M5+/afvV9qXm74urqRiBsQUWymdytb0blqrt7/bYGpjKFLbsU8VTCLn1rfFo5abg19am1N66g3G2WZpoi4PHNi+jLW9D3XIcXcyosKrU0TpK6BudawdNLqO0FA5cDv+T68rZQnxpeK1PreQ/m/44SO90AR8t1zvOtxId/NaU0Ef4ZTS5rUQ6iyhNsN442DajqG3TMkMHC40pYaVG5JAMr8U6WIn4Ol1J/K6X9LCgZb6GeePo0C5MwS/VSBZKJG5Lkc5WrQSj6ZPd1IBrWjKFLmGitiLFcVpuSuOgjujVN2PG317blYj1usgl04h8aNwxxAYdNlqkxiN13OOYRoN2DoGUkhYic+nXBs6kmmlhW0psXs3obiJTKSJS1U7OuUFyBTwGytbQA04Ye4ytM3HpClteI7ZCFwCPTlHS6Cneb+pT4XWobQBiAiEGSx4O4Qf5Q47nwZB44jX0WGCr3wp/2pJN/7zYrF/synazWg/o1JHekZJqCFPAq1BNlWRdcTNwbKoODIqtiq5ltGqwMdKaTEZHUjw/OAKXMzif29h6xEozBISYYz1oAC+1zVFnMJEdIkcklNdNTbwR0k1DBMOgPtvOGMBkmuLYde1ASsKSRjiJ0WYvIntczYflLEOxZmrZrRbLYZaxfMeEpq/QgfMVTqOoEh9ERBxwrMQKYSWSqIpEFSoRmGtSg6jCAGArGn1UslSJK6kL4KrhUTKRHoUQbEyF5RLspbhowHNAIElQAR2lyEisMyYiT6p//B+xIqYwIjV0zuXVMnIFaxEfpjxCm6HVKEYe5bmMULsYhZBkI41LqnlKlbHkupEUG5EsQoFyTnYQaiSJsJDKpWGhtEJ/whZRqAdAgnemElIqkNDcnKNE9ThgeywgQ15z3HP8CaciVdKRWI6UDixBRikiWf76nqAsvNTGLeG15AVAXnPCD0LAhmiVbyv0pQkTjlUyXoxkzcNj6dYiK9rBpvBKEdK9BR8ULQmUGxMTYxNXTEzofEzOj0OCy+KUVIQhMnV5cJIZ4349s7qUCuehVjxUL9wY2UC8npwk9wvvlJK3lJylS3fbmAbbQaRnmnIXpvAqOTB3YjAnrMCVMiKXg9PplgoiuY52CDwvW1efANhcO5Q5YojkgybI9amPKShJJhIU4z0SJKWSFx5vcEj85R4sNEsLPX3Uylz2MFLrcQT+EttD5RreWjSuz37+w4mvcLB3eSJXn0uRsumaKr0ACmjDkZl9XtEnAlTeCVpE60gaqemJpTTBj/QslOiDO9K192FELFY2x4YgvsG6yYnOhf3G7+J/BC+vjcBzLBrrl8TkIecTCD4OpKUlkcACJRakJbKWEg88SXkIkMBxuj3L3snqm7NZVDA7srn1Mk+VAJLgWtocrVCyNvKEEDNq+KfF8pbLv32H1I9JgK6BlNYJNxJb6U2G/95I04zdVoqaVQjsmnHgs+fGigl9tqbOlkMCnTy+5J3kBHh8mvHqo94JvMrj//RQI4vICOdf+8BiLogNHwgLGj/7DDfnZkpXsh0/eM2/vfgHsBU6zpcMAAA=</data>
+        <length>1984</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="1a6b926a9793e5100636b58e6253af6a">1a6b926a9793e5100636b58e6253af6a</sys_attachment>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 07:13:16</sys_created_on>
+        <sys_id>da6b926a9793e5100636b58e6253af6a</sys_id>
+    </sys_attachment_doc>
+</record_update>

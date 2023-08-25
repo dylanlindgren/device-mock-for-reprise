@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Device Mock for Reprise (Global)" source="5dbf7952c35b291072397fef05013123">5dbf7952c35b291072397fef05013123</dependency>
+        <min_version>3.0.0</min_version>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-08-08 05:13:35</sys_created_on>
+        <sys_id>b23ca0d5c32471100b48451ad0013111</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-25 01:37:16</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

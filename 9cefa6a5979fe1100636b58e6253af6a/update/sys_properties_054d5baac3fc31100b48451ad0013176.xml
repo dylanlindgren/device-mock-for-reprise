@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.appcreator.company.friendly_name</name>
+        <read_roles/>
+        <suffix>x_snc_mer</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-08-25 01:35:10</sys_created_on>
+        <sys_id>054d5baac3fc31100b48451ad0013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.appcreator.company.friendly_name</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_properties_054d5baac3fc31100b48451ad0013176</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-25 01:35:10</sys_updated_on>
+        <type>string</type>
+        <value>Service-now.com</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=054d5baac3fc31100b48451ad0013176"/>
+</record_update>

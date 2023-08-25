@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>SNC_WDS_MMC_DEVICE#ELEMENTS_UPDATED</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>[Device Mock for Reprise] Elements updated</label>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-16 05:24:55</sys_created_on>
+        <sys_id>25823f4cc323611072397fef050131a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>[Device Mock for Reprise] Elements updated</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_ux_event_25823f4cc323611072397fef050131a9</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-08-03 08:56:04</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=25823f4cc323611072397fef050131a9"/>
+</record_update>

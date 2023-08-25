@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver">
+    <sys_graphql_resolver action="INSERT_OR_UPDATE">
+        <name>getDeviceList</name>
+        <schema display_value="MobileMock">286d1d2697dfa5100636b58e6253af9c</schema>
+        <script><![CDATA[(function process(/*ResolverEnvironment*/ env) {
+
+	var helper = new GQL_Helper();
+	return helper.getDeviceList();
+
+})(env);]]></script>
+        <sys_class_name>sys_graphql_resolver</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-11 05:23:59</sys_created_on>
+        <sys_id>986282269753e5100636b58e6253af13</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getDeviceList</sys_name>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_graphql_resolver_986282269753e5100636b58e6253af13</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-11 05:25:14</sys_updated_on>
+    </sys_graphql_resolver>
+</record_update>

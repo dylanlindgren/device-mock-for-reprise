@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="949b3ae197dfe1100636b58e6253afa9" label="Meta Device Package" max_length="40" name="x_snc_mer_device_package" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Crop radius (pixels)" max_length="40" name="crop_radius" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Device offset (top)" max_length="40" name="device_offset_top" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Height (pixels)" max_length="40" name="height" type="integer"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Offset left (pixels)" max_length="40" name="offset_x" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Offset top (pixels)" max_length="40" name="offset_y" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="new" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+                <element inactive_on_update="false" label="Processing" sequence="3" value="processing"/>
+                <element inactive_on_update="false" label="Finished" sequence="4" value="finished"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Width (pixels)" max_length="40" name="width" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="ZIP file" max_length="40" name="zip_file" type="file_attachment"/>
+    </element>
+</database>

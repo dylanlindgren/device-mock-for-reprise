@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="112cb78897a761100636b58e6253af09" label="Demo Area" max_length="40" name="x_snc_mer_demo_area" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Demo step" max_length="32" name="demo_step" reference="x_snc_mer_demo_step" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Height" max_length="40" name="height" type="integer"/>
+        <element display="true" label="ID" max_length="40" name="id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Left" max_length="40" name="left" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Top" max_length="40" name="top" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Width" max_length="40" name="width" type="integer"/>
+        <index name="index">
+            <element name="demo_step"/>
+        </index>
+    </element>
+</database>

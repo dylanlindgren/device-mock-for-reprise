@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9a87b7f158d7e5106b88f55d15ba9227</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>9cefa6a5979fe1100636b58e6253af6a</scope_name>
+        <serialized_content>{"FlowDesigner:FD9a87b7f158d7e5106b88f55d15ba9227":{"$COCollectionField":[{"file_details_child":{"file_last_updated":"Date","file_last_updated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Date/Time\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"glide_date_time\",\"default_value\":\"\",\"label\":\"File last updated\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"file_name":"String","file_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"File name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"File Details\",\"mandatory\":\"false\",\"child_name\":\"file_details_child\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9a87b7f158d7e5106b88f55d15ba9227\",\"child_label\":\"File Object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"23bbc8b6-f658-492f-bd4e-99b12f6d6777\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD9a87b7f158d7e5106b88f55d15ba9227.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"File Details\",\"mandatory\":\"false\",\"child_name\":\"file_details_child\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9a87b7f158d7e5106b88f55d15ba9227\",\"child_label\":\"File Object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"23bbc8b6-f658-492f-bd4e-99b12f6d6777\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2023-06-09 06:00:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e87b7f1c3d7e51072397fef05013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD9a87b7f158d7e5106b88f55d15ba9227</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
+        <sys_update_name>sys_complex_object_5e87b7f1c3d7e51072397fef05013127</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2023-06-09 06:00:18</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

@@ -30,3 +30,8 @@ Download the latest release from the panel at the right of this page.
 ## Usage
 
 Instructions coming soon.
+
+## Related Repositories
+
+- [dylanlindgren/device-mock-for-reprise-components](https://github.com/dylanlindgren/device-mock-for-reprise-components)
+- [dylanlindgren/device-mock-for-reprise-global](https://github.com/dylanlindgren/device-mock-for-reprise-global)

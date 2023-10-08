@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2023-08-01 06:09:40</sys_created_on>
-        <sys_id>8dfb932ac3fc31100b48451ad001312f</sys_id>
+        <sys_id>b4de633c97b9b1103f46bdc71153af0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_mer_demo_area</sys_name>
         <sys_package display_value="Device Mock for Reprise" source="x_snc_mer">9cefa6a5979fe1100636b58e6253af6a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Device Mock for Reprise">9cefa6a5979fe1100636b58e6253af6a</sys_scope>
-        <sys_update_name>ua_table_licensing_config_8dfb932ac3fc31100b48451ad001312f</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_b4de633c97b9b1103f46bdc71153af0d</sys_update_name>
         <sys_updated_by>dylan.lindgren</sys_updated_by>
         <sys_updated_on>2023-08-01 06:09:40</sys_updated_on>
     </ua_table_licensing_config>
